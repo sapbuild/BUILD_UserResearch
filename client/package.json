@@ -1,0 +1,24 @@
+{
+  "name": "norman-user-research-client",
+  "version": "0.1.0",
+  "description": "Norman User Research module",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/Build/blob/master/LICENSE.txt"
+    }
+  ],
+  "peerDependencies": {
+    "norman-client-tp": "*"
+  },
+  "dependencies": {
+    "angular-filter": "0.5.1",
+    "signals": "1.0.0",
+    "crossroads": "0.12.1",
+    "hasher": "1.2.0"
+  }
+}

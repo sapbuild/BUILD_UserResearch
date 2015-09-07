@@ -1,1 +1,56 @@
-# BUILD_UserResearch
+[UserResearch](https://github.wdf.sap.corp/Norman/UserResearch)   [![Build Status](https://build-jenkins.wdf.sap.corp/jenkins/view/Dublin/job/UserResearch-master/badge/icon)](https://build-jenkins.wdf.sap.corp/jenkins/job/UserResearch-master/)
+============
+This module allows users to obtain feedbacks on their app.
+
+### Installation
+
+1. Clone git repository
+    ```sh
+    git clone https://github.wdf.sap.corp/Norman/UserResearch.git
+    ```
+
+2. Install required node modules (dependencies):
+    ```sh
+    npm install
+    ```
+
+3. Build and run:
+    ```sh
+    grunt serve     // build dev + start express server + watch js & less for changes (all that is needed for local dev)
+    grunt dev       // just build in development mode
+    grunt dist      // build for production
+    grunt test      // run the karma(frontend) and mocha(backend) tests
+    grunt test:e2e  // run the protractor end-to-end tests
+    grunt eslint    // run the eslint checks for both the UI and server
+    
+    cd to sample/server   run node app.js  // starts the server with all your changes and runs any existing UI, saves you having to bundle and copy the UI during DB work
+    ```
+
+### Include as a module
+
+1. Configure [Norman NPM registry](https://jam4.sapjam.com/wiki/show/kvLVqwLEg5DQorc6zsGIUh) - for installing norman modules with `npm`
+
+2. Install the npm module:
+    ```sh
+    npm install norman-user-research-client norman-user-research-server
+    ```
+
+3. Include it in the client app: edit `client/requires.js`:
+    ```js
+    require('norman-user-research-client');
+    ```
+
+4. Include it in the server app: edit `server/requires.js`:
+    ```js
+    require('norman-user-research-server')(app);
+    ```
+    
+5. To update the version of User Research you have in your app, run
+    ```sh
+    npm update norman-user-research-client norman-user-research-server
+    ```
+
+
+##Make a Contribution
+Click here to view our [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md) document.
+
