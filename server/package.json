@@ -1,0 +1,24 @@
+{
+  "name": "norman-user-research-server",
+  "version": "0.1.0",
+  "description": "Norman User Research module",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/Build/blob/master/LICENSE.txt"
+    }
+  ],
+  "peerDependencies": {
+    "norman-common-server": "*",
+    "norman-server-tp": "*"
+  },
+  "dependencies": {
+    "unzip2": "0.2.5",
+    "crossroads": "0.12.1",
+    "node-handlebars": "0.9.5"
+  }
+}

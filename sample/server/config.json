@@ -1,0 +1,139 @@
+{
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "debug": {
+    "active": 1
+  },
+  "server": {
+    "workers": 0
+  },
+  "logging": {
+    "logDirectory": "logs",
+    "output": {
+      "stdout": {
+        "type": "console"
+      },
+      "logfile": {
+        "type": "file",
+        "path": "norman_{now:yyyyMMdd}_{pid}.log"
+      }
+    },
+    "loggers": {
+      "*": {
+        "stdout": "debug",
+        "logfile": "info"
+      }
+    },
+    "http": {
+
+      "port": 9000,
+        "proxy": {
+            "host": "proxy",
+            "port": 8080
+        },
+        "secureFlag": false,
+        "logMode": "response"
+    }
+  },
+  "db": {
+    "hosts": "localhost",
+    "database": "norman-user-research-dev",
+    "options": {
+      "db": {
+          "w": 1
+      },
+      "server": {
+        "poolSize": 5,
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
+    }
+  },
+  "deployment": {
+    "strategy": "single"
+  },
+  "http": {
+    "port": 9000,
+    "proxy": {
+      "host": "proxy",
+      "port": 8080
+    },
+    "secureFlag" : false
+  },
+  "session": {
+    "secret": "Dj23fVtahDYE3dfjCAHrJhzrUDosljxqVDDN9VNhRJDVf8TyD1F1nqYrjGYF",
+    "tokenExpirationMinutes": 5,
+    "tokenLength": 64,
+    "tokenExpirationDays" : 30
+  },
+  "facebook": {
+    "clientID": "942447102435121",
+    "clientSecret": "33a4514d7c42bea5f421219f7218c727",
+    "callbackURL": "/auth/facebook/callback",
+    "enable" : true
+  },
+  "google": {
+    "clientID": "328102506301-28sckgpg9joktt956jggl3c0liqub5jv.apps.googleusercontent.com",
+    "clientSecret": "Oc-BSCxlhvs3ayhcrDozlAGm",
+    "callbackURL": "/auth/google/callback",
+    "enable" : true
+  },
+  "linkedin": {
+    "clientID": "776t60krcb9nei",
+    "clientSecret": "nlmFC80g9Pv7Rlc1",
+    "callbackURL": "/auth/linkedin/callback",
+    "enable" : true
+  },
+  "account": {
+    "forgotPasswordTokenExpiryInDays": 1,
+    "autoResendEmailVerification" : true,
+    "emailVerifingTokenExpiryInDays" : 30,
+    "emailHasAlreadyVerified" : "The resource you are looking for is not available.",
+    "recoverAccountPasswordTokenExpiredMessage" : "The resource your are looking for hasbeen expired, please try again later.",
+    "recoverAccountPasswordTokenVerifiedMessage" :"Your email address has been verified."
+  },
+  "passport": {
+    "successRedirect": "/norman",
+    "successConnectRedirect": "/norman",
+    "successUnlinkeRedirect": "/norman"
+  },
+  "audit": {
+    "defaultCreatedBy" : "SYSTEM"
+  },
+  "access": {
+    "defaultPermissions": [
+        {"access": "standard"},
+        {"study": "participant"},
+        {"project": "collaborator"}
+    ]
+  },
+    "security": "security.json",
+  "web": {
+    "root": "../../dev",
+    "indexFallback": [
+      "/verifyemail",
+      "/auth",
+      "/auth/*",
+      "/login",
+      "/signup",
+     "/forgot-password",
+      "/reset-password/*",
+      "/norman"
+    ],
+    "compression": {
+      "threshold": 512
+    }
+  },
+  "services": "services.json",
+  "features": "features.json",
+  "fileUpload":{
+        "limits": {
+            "fields": 50,
+            "fileSize": 50.5e7,
+            "files": 500,
+            "parts": 500
+        }
+    }
+}
