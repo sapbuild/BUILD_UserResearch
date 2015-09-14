@@ -12,10 +12,6 @@
       "url": "https://github.com/SAP/Build/blob/master/LICENSE.txt"
     }
   ],
-  "peerDependencies": {
-    "norman-common-server": "*",
-    "norman-server-tp": "*"
-  },
   "dependencies": {
     "unzip2": "0.2.5",
     "crossroads": "0.12.1",
