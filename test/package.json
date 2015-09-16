@@ -1,6 +1,6 @@
 {
   "name": "norman-user-research-e2e",
-  "version": "0.1.1",
+  "version": "0.3.0",
   "description": "Norman User Research End2End tests",
   "main": " ",
   "scripts": {
@@ -18,7 +18,7 @@
   ],
   "devDependencies": {
     "grunt-protractor-runner": "1.2.1",
-    "norman-testing-tp": "*",
-    "norman-testing-tp-client": "*"
+    "norman-testing-tp": "0.3.0",
+    "norman-testing-tp-client": "0.3.0"
   }
 }
