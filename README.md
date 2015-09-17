@@ -2,6 +2,7 @@
 ============
 This module allows users to obtain feedbacks on their app.
 
+
 ### Installation
 
 1. Clone git repository
@@ -50,7 +51,9 @@ This module allows users to obtain feedbacks on their app.
     npm update norman-user-research-client norman-user-research-server
     ```
 
+# BUILD on GitHub
 
-##Make a Contribution
-Click here to view our [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md) document.
+[Click here](https://github.com/SAP/BUILD) to visit the central BUILD project on GitHub, where you can find out more!
+
+[Click here](https://github.com/SAP/BUILD/blob/master/Contributing.md) to view the BUILD Contribution Guidelines. 
 
