@@ -1,4 +1,8 @@
-[UserResearch](https://github.wdf.sap.corp/Norman/UserResearch)   [![Build Status](https://build-jenkins.wdf.sap.corp/jenkins/view/Dublin/job/UserResearch-master/badge/icon)](https://build-jenkins.wdf.sap.corp/jenkins/job/UserResearch-master/)
+[![Build](https://img.shields.io/travis/sapbuild/UserResearch.svg?style=flat-square)](http://travis-ci.org/sapbuild/UserResearch)
+[![Version](https://img.shields.io/npm/v/user-research-client.svg?style=flat-square)](https://npmjs.org/package/user-research-client)
+[![Dependency Status](https://david-dm.org/sapbuild/UserResearch.svg)](https://david-dm.org/sapbuild/UserResearch)
+[![devDependency Status](https://david-dm.org/sapbuild/UserResearch/dev-status.svg)](https://david-dm.org/sapbuild/UserResearch#info=devDependencies)
+[![Coverage](https://img.shields.io/coveralls/sapbuild/UserResearch/master.svg?style=flat-square)](https://coveralls.io/r/sapbuild/UserResearch?branch=master)
 ============
 This module allows users to obtain feedbacks on their app.
 
